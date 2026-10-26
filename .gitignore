@@ -1,55 +1,39 @@
-# Prerequisites
-*.d
+# --- PlatformIO ---
+.pio/
+.piolibdeps/
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
+# --- Arduino IDE / Arduino CLI ---
+build/
+.build/
 *.hex
+*.bin
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+# --- IDE та редактори (VS Code, CLion тощо) ---
+.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.code-workspace
+.idea/
+*.suo
+*.ncb
+*.user
+*.sln
+*.vcxproj
+*.vcxproj.filters
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# --- Операційна система ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
 
-# debug information files
-*.dwo
+# --- Локальні налаштування та секрети ---
+credentials.h
+secrets.h
+*.local
